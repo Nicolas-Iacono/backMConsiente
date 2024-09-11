@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 
-const { SECRET_KEY } =  process.env;
+const { SECRET_KEY, EMAIL_ADMIN } =  process.env;
 
 const calculateIMC = (weight, height) => {
   return (weight / ((height / 100) ** 2)).toFixed(2); 
@@ -61,7 +61,7 @@ const createUser = async ({ username, lastname, age, weight, height, email }) =>
 
     // Envía el correo de notificación
     sendMail(
-      'zarlengaleandroadrian@gmail.com',
+      EMAIL_ADMIN,
       'Nuevo usuario agregado',
       adminHtmlContent
     );
