@@ -34,7 +34,12 @@ User.init({
     type: DataTypes.INTEGER,
     allowNull: false,
   },
-}, {
+  verified: {
+    type: DataTypes.BOOLEAN,
+    allowNull: false,
+    defaultValue: false, 
+  },
+  }, {
   sequelize,
   freezeTableName: true,
   createdAt: false,
