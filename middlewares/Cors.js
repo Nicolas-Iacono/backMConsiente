@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 
 const allowedOrigins = [
   process.env.FRONT_URL,
-  'http://localhost:3000',
+  'https://olive-tapir-884444.hostingersite.com',
   'https://backend-m-consiente.onrender.com/api/user',
   'https://movimiento-consiente.onrender.com'
 ];

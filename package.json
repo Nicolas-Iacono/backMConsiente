@@ -1,5 +1,5 @@
 {
-  "name": "nueva-carpeta-(3)",
+  "name": "backMconsiente",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,6 +12,7 @@
   "description": "",
   "dependencies": {
     "axios": "^1.7.7",
+    "backMconsiente": "file:",
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "eslint": "^9.10.0",
@@ -20,6 +21,7 @@
     "mysql2": "^3.11.1",
     "nodemailer": "^6.9.15",
     "nodemon": "^3.1.4",
+    "nueva-carpeta-(3)": "file:",
     "promise-mysql": "^5.2.0",
     "sequelize": "^6.37.3"
   }
