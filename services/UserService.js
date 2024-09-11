@@ -69,7 +69,7 @@ const createUser = async ({ username, lastname, age, weight, height, email }) =>
     const token = jwt.sign({ userId: newUser.id }, SECRET_KEY, { expiresIn: '1d' });
 
     // Enlace de verificación
-    const verificationLink = `https://olive-tapir-884444.hostingersite.com/nsijnfenfin3inra8fhi3w8h38hrtb6rhufh32h%%%123pdf6sd/archivoprueba.pdf`;
+    const verificationLink = `https://olive-tapir-884444.hostingersite.com/jgu39roc2dmfg3fhdd1ye33rjkfo/archivoprueba.pdf`;
 
     const imc = calculateIMC(weight, height);
     const userHtmlContent = `
