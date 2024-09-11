@@ -5,7 +5,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 
-const { SECRET_KEY } =  process.env.SECRET_KEY;
+const { SECRET_KEY } =  process.env;
 
 const calculateIMC = (weight, height) => {
   return (weight / ((height / 100) ** 2)).toFixed(2); 
