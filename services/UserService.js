@@ -69,7 +69,7 @@ const createUser = async ({ username, lastname, age, weight, height, email }) =>
     const token = jwt.sign({ userId: newUser.id }, SECRET_KEY, { expiresIn: '1d' });
 
     // Enlace de verificación
-    const verificationLink = `https://olive-tapir-884444.hostingersite.com/verify-email?token=${token}`;
+    const verificationLink = `https://backmconsiente.onrender.com/verify-email?token=${token}`;
 
     const imc = calculateIMC(weight, height);
     const userHtmlContent = `
@@ -100,5 +100,5 @@ const createUser = async ({ username, lastname, age, weight, height, email }) =>
 };
 
 module.exports = {
-  createUser,
+  createUser,verificationLink
 };

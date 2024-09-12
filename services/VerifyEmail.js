@@ -29,7 +29,7 @@ router.get('/verify-email', async (req, res) => {
     }
 
     // Redirigir a una página o ruta segura donde se pueda descargar el PDF
-    return res.redirect(`https://olive-tapir-884444.hostingersite.com/verify-email?token=${token}`);
+    return res.redirect(`https://olive-tapir-884444.hostingersite.com/success`);
   } catch (error) {
     console.error('Error al verificar el correo:', error);
     return res.status(400).send('Enlace de verificación inválido o expirado');
