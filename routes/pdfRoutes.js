@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const dotenv = require('dotenv');
 dotenv.config();
 
-router.get('/download-pdf', async (req, res) => {
+router.get('/descarga', async (req, res) => {
   // Aquí debes asegurarte de que el usuario está autenticado y verificado
   const { SECRET_KEY } = process.env;
   const token = req.query.token;
