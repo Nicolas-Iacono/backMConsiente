@@ -100,5 +100,5 @@ const createUser = async ({ username, lastname, age, weight, height, email }) =>
 };
 
 module.exports = {
-  createUser,verificationLink
+  createUser
 };
